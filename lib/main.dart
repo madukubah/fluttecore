@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'activity/auth/login/LoginPage.dart';
+import 'activity/auth/register/RegisterPage.dart';
+import 'activity/profile/Profile.dart';
 import 'activity/splash/SplashScreen.dart';
 import 'activity/main/Home.dart';
 
@@ -15,7 +18,11 @@ class MyApp extends StatelessWidget {
       ),
       home: new SplashScreen(),
       routes: <String, WidgetBuilder>{
-        '/Home': (BuildContext context) => new Home(  )
+        '/Home': (BuildContext context) => new Home(  ) ,
+        '/LoginPage': (BuildContext context) => new LoginPage(  ),
+        '/RegisterPage': (BuildContext context) => new RegisterPage(  ),
+        '/RegisterPage': (BuildContext context) => new RegisterPage(  ),
+        '/Profile': (BuildContext context) => new Profile(  ),
       },
       onGenerateRoute : (settings) {
         
